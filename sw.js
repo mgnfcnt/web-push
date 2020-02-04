@@ -17,5 +17,5 @@ self.addEventListener('push', function(e) {
         }]
     };
 
-    e.waitUntil(self.registration.sendNotification('test message', options));
+    e.waitUntil(self.registration.showNotification('test message', options));
 })
